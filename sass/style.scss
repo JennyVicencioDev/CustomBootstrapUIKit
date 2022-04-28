@@ -1,0 +1,50 @@
+/*!
+Theme Name: Nombre de proyecto
+Author: Agencia Rompecabeza Digital
+Author URI: https://www.rompecabeza.cl/
+Description: Proyecto base Rompecabeza.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+--------------------------------------------------------------
+# Abstracts
+	- Variables
+   - Mixins
+# Layouts
+	- Navigation
+	- Footer
+# Components
+	- Cards
+# Pages
+	- Home
+--------------------------------------------------------------
+*/
+
+// Importar variables y mixins.
+@import "custom-styles/abstracts/variables";
+@import "custom-styles/abstracts/mixins";
+
+/*------------------------------------------------------------
+# Layouts
+------------------------------------------------------------*/
+// añadir aqui los partials para cada parte del diseño
+@import "custom-styles/layouts/navigation";
+@import "custom-styles/layouts/footer";
+
+/*------------------------------------------------------------
+# Components
+------------------------------------------------------------*/
+// añadir aqui los partials para cada componente (cards, forms, carruseles, etc.)
+@import "custom-styles/components/cards";
+
+/*------------------------------------------------------------
+# Pages
+------------------------------------------------------------*/
+// añadir aqui los partials para cada página
+@import "custom-styles/pages/home";
+
+
+

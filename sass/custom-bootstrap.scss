@@ -1,0 +1,194 @@
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/functions";
+
+// Required Bootstrap stylesheets
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+/////////////// COLORES ///////////////
+
+//
+// Colores base (:root) 
+//
+
+// Definir paleta de nuevos colores:
+$testcolor: #dc0000;
+
+// Agregar, borrar o modificar para actualizar mapa de colores:
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800,
+  "testcolor" : $testcolor // color paleta de prueba
+);
+
+//
+// Colores Temáticos Bootstrap
+//
+// Modificar para actualizar mapa de colores temáticos predefinidos:
+
+// $primary:       $blue;
+// $secondary:     $gray-600;
+// $success:       $green;
+// $info:          $cyan;
+// $warning:       $yellow;
+// $danger:        $red;
+// $light:         $gray-100;
+// $dark:          $gray-900;
+
+// Agregar, borrar o modificar para actualizar mapa de colores temáticos:
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+);
+
+//
+// Colores Temáticos personalizados
+//
+// Mapa de nuevos colores que generarán clases de estado para links, botones, backgrounds, text, etc.):
+
+$custom-theme-colors: (
+  "test": $testcolor, // color temático de prueba
+)!default;
+
+//
+// Gradient
+//
+$gradient: linear-gradient(90deg, rgba($white, .5), rgba($blue, .5));
+
+
+//////////////// CUERPO ///////////////
+
+// $body-color: #000;
+// $body-bg: #fff;
+// $body-text-align: left;
+
+
+//////////////// LINKS ////////////////
+
+// $link-color: $primary;
+// $link-decoration: underline;
+
+
+////////// GRID BREAKPOINTS ///////////
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
+
+///////////// TIPOGRAFÍA //////////////
+
+// 
+// Fonts 
+//
+$font-family-sans-serif: 'Montserrat', sans-serif;
+// $font-weight-base: $font-weight-normal;
+// $line-height-base: 1.5;
+
+
+// 
+// Headings 
+//
+// $h1-font-size: $font-size-base * 2.5;
+// $h2-font-size: $font-size-base * 2;
+// $h3-font-size: $font-size-base * 1.75;
+// $h4-font-size: $font-size-base * 1.5;
+// $h5-font-size: $font-size-base * 1.25;
+// $h6-font-size: $font-size-base;
+
+// Modificar en caso de tener estilos diferentes en los headings:
+// $headings-margin-bottom:      $spacer * .5;
+// $headings-font-family:        null;
+// $headings-font-style:         null;
+// $headings-font-weight:        500;
+// $headings-line-height:        1.2;
+// $headings-color:              $gray-900;
+
+
+// ** Para añadir más variables para modificar ver 'bootstrap/variables' :) **
+
+// --------------- fin custom bs --------------- //
+
+// custom-theme-colors mapping
+// fix de clases .bg-*, .text-* que arreglarán en una futura versión de BS
+// No comentar
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-colors: map-merge($utilities-colors, (
+    "black": to-rgb($black),
+    "white": to-rgb($white),
+    "body": to-rgb($body-color)
+));
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+// Required utilities
+@import "bootstrap/utilities";
+
+// Optional Bootstrap Layout & components
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/accordion";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/offcanvas";
+@import "bootstrap/placeholders";
+
+// Helpers
+@import "bootstrap/helpers";
+
+// Utilities
+@import "bootstrap/utilities/api";

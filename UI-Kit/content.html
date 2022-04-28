@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.84.0" />
+  <title>UI Kit RCD · Bootstrap 5</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/cheatsheet.css" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai-sublime.min.css">
+
+</head>
+
+<body class="bg-light">
+  <!-- Navegación -->
+  <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+    <div class="container-fluid d-flex align-items-center">
+      <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+        <a href="index.html">
+          <img src="./img/rcd-logo.svg" width="38" height="30" class="me-3" alt="Bootstrap">
+        </a>
+        UI Kit Cheatsheet - Nombre de proyecto
+      </h1>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+  <aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2 pb-2 pb-xl-0">
+    <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Índice</h2>
+    <nav class="small" id="toc">
+      <ul class="list-unstyled">
+        <li class="my-2">
+          <a class="link d-inline-flex align-items-center" href="index.html">Introducción</a>
+        </li>
+        <li class="my-2">
+          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false"
+            data-bs-target="#contents-collapse" aria-controls="contents-collapse">
+            Content
+          </button>
+          <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="#typography">Typography</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="#images">Images</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="#tables">Tables</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="#figures">Figures</a>
+            </li>
+          </ul>
+        </li>
+        <li class="my-2">
+          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false"
+            data-bs-target="#forms-collapse" aria-controls="forms-collapse">
+            Forms
+          </button>
+          <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="forms.html#overview">Overview</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="forms.html#disabled-forms">Disabled forms</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="forms.html#sizing">Sizing</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="forms.html#input-group">Input group</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="forms.html#floating-labels">Floating labels</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="forms.html#validation">Validation</a>
+            </li>
+          </ul>
+        </li>
+        <li class="my-2">
+          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false"
+            data-bs-target="#components-collapse" aria-controls="components-collapse">
+            Components
+          </button>
+          <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#accordion">Accordion</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#alerts">Alerts</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#badge">Badge</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#breadcrumb">Breadcrumb</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#buttons">Buttons</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#button-group">Button group</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#card">Card</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#carousel">Carousel</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#dropdowns">Dropdowns</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#list-group">List group</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#modal">Modal</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#navs">Navs</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#navbar">Navbar</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#pagination">Pagination</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#popovers">Popovers</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#progress">Progress</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#scrollspy">Scrollspy</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#spinners">Spinners</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#toasts">Toasts</a>
+            </li>
+            <li>
+              <a class="d-inline-flex align-items-center rounded" href="components.html#tooltips">Tooltips</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <div class="bd-cheatsheet container-fluid bg-body">
+
+    <!-- CONTENIDO -->
+    <section id="content">
+      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Content</h2>
+
+      <!-- Tipografía -->
+      <article class="my-3" id="typography">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Typography</h3>
+          <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.0/content/typography/">Docs</a>
+        </div>
+
+        <div>
+          <!-- Headings -->
+          <div class="bd-example">
+            <!-- Light -->
+            <div class="headings mb-4">
+              <h3 class="fw-light">Light headings</h3>
+              <div class="row">
+                <h1 class="h1 fw-light col-2 col-sm-3">h1</h1>
+                <h1 class="h1 fw-light col-3">40px</h1>
+                <h1 class="h1 fw-light col-7 col-sm-6">h1. Heading title</h1>
+              </div>
+              <div class="row">
+                <h2 class="h2 fw-light col-2 col-sm-3">h2</h2>
+                <h2 class="h2 fw-light col-3">32px</h2>
+                <h2 class="h2 fw-light col-7 col-sm-6">h2. Heading title</h2>
+              </div>
+              <div class="row">
+                <h3 class="h3 fw-light col-2 col-sm-3">h3 </h3>
+                <h3 class="h3 fw-light col-3">28px</h3>
+                <h3 class="h3 fw-light col-7 col-sm-6">h3. Heading title</h3>
+              </div>
+              <div class="row">
+                <h4 class="h4 fw-light col-2 col-sm-3">h4</h4>
+                <h4 class="h4 fw-light col-3">24px</h4>
+                <h4 class="h4 fw-light col-7 col-sm-6">h4. Heading title</h4>
+              </div>
+              <div class="row">
+                <h5 class="h5 fw-light col-2 col-sm-3">h5</h5>
+                <h5 class="h5 fw-light col-3">20px</h5>
+                <h5 class="h5 fw-light col-7 col-sm-6">h5. Heading title</h5>
+              </div>
+              <div class="row">
+                <h6 class="h6 fw-light col-2 col-sm-3">h6</h6>
+                <h6 class="h6 fw-light col-3">16px</h6>
+                <h6 class="h6 fw-light col-7 col-sm-6">h6. Heading title</h6>
+              </div>
+            </div>
+            <!-- Regular -->
+            <div class="headings mb-4">
+              <h3>Regular headings</h3>
+              <div class="row">
+                <h1 class="h1 fw-normal col-2 col-sm-3">h1</h1>
+                <h1 class="h1 fw-normal col-3">40px</h1>
+                <h1 class="h1 fw-normal col-7 col-sm-6">h1. Heading title</h1>
+              </div>
+              <div class="row">
+                <h2 class="h2 fw-normal col-2 col-sm-3">h2</h2>
+                <h2 class="h2 fw-normal col-3">32px</h2>
+                <h2 class="h2 fw-normal col-7 col-sm-6">h2. Heading title</h2>
+              </div>
+              <div class="row">
+                <h3 class="h3 fw-normal col-2 col-sm-3">h3 </h3>
+                <h3 class="h3 fw-normal col-3">28px</h3>
+                <h3 class="h3 fw-normal col-7 col-sm-6">h3. Heading title</h3>
+              </div>
+              <div class="row">
+                <h4 class="h4 fw-normal col-2 col-sm-3">h4</h4>
+                <h4 class="h4 fw-normal col-3">24px</h4>
+                <h4 class="h4 fw-normal col-7 col-sm-6">h4. Heading title</h4>
+              </div>
+              <div class="row">
+                <h5 class="h5 fw-normal col-2 col-sm-3">h5</h5>
+                <h5 class="h5 fw-normal col-3">20px</h5>
+                <h5 class="h5 fw-normal col-7 col-sm-6">h5. Heading title</h5>
+              </div>
+              <div class="row">
+                <h6 class="h6 fw-normal col-2 col-sm-3">h6</h6>
+                <h6 class="h6 fw-normal col-3">16px</h6>
+                <h6 class="h6 fw-normal col-7 col-sm-6">h6. Heading title</h6>
+              </div>
+            </div>
+            <!-- Medium -->
+            <div class="headings mb-4">
+              <h3>Medium headings</h3>
+              <div class="row">
+                <h1 class="h1 fw-medium col-2 col-sm-3">h1</h1>
+                <h1 class="h1 fw-medium col-3">40px</h1>
+                <h1 class="h1 fw-medium col-7 col-sm-6">h1. Heading title</h1>
+              </div>
+              <div class="row">
+                <h2 class="h2 fw-medium col-2 col-sm-3">h2</h2>
+                <h2 class="h2 fw-medium col-3">32px</h2>
+                <h2 class="h2 fw-medium col-7 col-sm-6">h2. Heading title</h2>
+              </div>
+              <div class="row">
+                <h3 class="h3 fw-medium col-2 col-sm-3">h3 </h3>
+                <h3 class="h3 fw-medium col-3">28px</h3>
+                <h3 class="h3 fw-medium col-7 col-sm-6">h3. Heading title</h3>
+              </div>
+              <div class="row">
+                <h4 class="h4 fw-medium col-2 col-sm-3">h4</h4>
+                <h4 class="h4 fw-medium col-3">24px</h4>
+                <h4 class="h4 fw-medium col-7 col-sm-6">h4. Heading title</h4>
+              </div>
+              <div class="row">
+                <h5 class="h5 fw-medium col-2 col-sm-3">h5</h5>
+                <h5 class="h5 fw-medium col-3">20px</h5>
+                <h5 class="h5 fw-medium col-7 col-sm-6">h5. Heading title</h5>
+              </div>
+              <div class="row">
+                <h6 class="h6 fw-medium col-2 col-sm-3">h6</h6>
+                <h6 class="h6 fw-medium col-3">16px</h6>
+                <h6 class="h6 fw-medium col-7 col-sm-6">h6. Heading title</h6>
+              </div>
+            </div>
+            <!-- Semi Bold -->
+            <div class="headings mb-4">
+              <h3 class="fw-semibold">Semi Bold headings</h3>
+              <div class="row">
+                <h1 class="h1 fw-semibold col-2 col-sm-3">h1</h1>
+                <h1 class="h1 fw-semibold col-3">40px</h1>
+                <h1 class="h1 fw-semibold col-7 col-sm-6">h1. Heading title</h1>
+              </div>
+              <div class="row">
+                <h2 class="h2 fw-semibold col-2 col-sm-3">h2</h2>
+                <h2 class="h2 fw-semibold col-3">32px</h2>
+                <h2 class="h2 fw-semibold col-7 col-sm-6">h2. Heading title</h2>
+              </div>
+              <div class="row">
+                <h3 class="h3 fw-semibold col-2 col-sm-3">h3 </h3>
+                <h3 class="h3 fw-semibold col-3">28px</h3>
+                <h3 class="h3 fw-semibold col-7 col-sm-6">h3. Heading title</h3>
+              </div>
+              <div class="row">
+                <h4 class="h4 fw-semibold col-2 col-sm-3">h4</h4>
+                <h4 class="h4 fw-semibold col-3">24px</h4>
+                <h4 class="h4 fw-semibold col-7 col-sm-6">h4. Heading title</h4>
+              </div>
+              <div class="row">
+                <h5 class="h5 fw-semibold col-2 col-sm-3">h5</h5>
+                <h5 class="h5 fw-semibold col-3">20px</h5>
+                <h5 class="h5 fw-semibold col-7 col-sm-6">h5. Heading title</h5>
+              </div>
+              <div class="row">
+                <h6 class="h6 fw-semibold col-2 col-sm-3">h6</h6>
+                <h6 class="h6 fw-semibold col-3">16px</h6>
+                <h6 class="h6 fw-semibold col-7 col-sm-6">h6. Heading title</h6>
+              </div>
+            </div>
+            <!-- Bold -->
+            <div class="headings mb-4">
+              <h3 class="fw-bold">Bold headings</h3>
+              <div class="row">
+                <h1 class="h1 fw-bold col-2 col-sm-3">h1</h1>
+                <h1 class="h1 fw-bold col-3">40px</h1>
+                <h1 class="h1 fw-bold col-7 col-sm-6">h1. Heading title</h1>
+              </div>
+              <div class="row">
+                <h2 class="h2 fw-bold col-2 col-sm-3">h2</h2>
+                <h2 class="h2 fw-bold col-3">32px</h2>
+                <h2 class="h2 fw-bold col-7 col-sm-6">h2. Heading title</h2>
+              </div>
+              <div class="row">
+                <h3 class="h3 fw-bold col-2 col-sm-3">h3 </h3>
+                <h3 class="h3 fw-bold col-3">28px</h3>
+                <h3 class="h3 fw-bold col-7 col-sm-6">h3. Heading title</h3>
+              </div>
+              <div class="row">
+                <h4 class="h4 fw-bold col-2 col-sm-3">h4</h4>
+                <h4 class="h4 fw-bold col-3">24px</h4>
+                <h4 class="h4 fw-bold col-7 col-sm-6">h4. Heading title</h4>
+              </div>
+              <div class="row">
+                <h5 class="h5 fw-bold col-2 col-sm-3">h5</h5>
+                <h5 class="h5 fw-bold col-3">20px</h5>
+                <h5 class="h5 fw-bold col-7 col-sm-6">h5. Heading title</h5>
+              </div>
+              <div class="row">
+                <h6 class="h6 fw-bold col-2 col-sm-3">h6</h6>
+                <h6 class="h6 fw-bold col-3">16px</h6>
+                <h6 class="h6 fw-bold col-7 col-sm-6">h6. Heading title</h6>
+              </div>
+            </div>
+            <!-- Black -->
+            <div class="headings mb-4">
+              <h3 class="fw-black">Black headings</h3>
+              <div class="row">
+                <h1 class="h1 fw-black col-2 col-sm-3">h1</h1>
+                <h1 class="h1 fw-black col-3">40px</h1>
+                <h1 class="h1 fw-black col-7 col-sm-6">h1. Heading title</h1>
+              </div>
+              <div class="row">
+                <h2 class="h2 fw-black col-2 col-sm-3">h2</h2>
+                <h2 class="h2 fw-black col-3">32px</h2>
+                <h2 class="h2 fw-black col-7 col-sm-6">h2. Heading title</h2>
+              </div>
+              <div class="row">
+                <h3 class="h3 fw-black col-2 col-sm-3">h3 </h3>
+                <h3 class="h3 fw-black col-3">28px</h3>
+                <h3 class="h3 fw-black col-7 col-sm-6">h3. Heading title</h3>
+              </div>
+              <div class="row">
+                <h4 class="h4 fw-black col-2 col-sm-3">h4</h4>
+                <h4 class="h4 fw-black col-3">24px</h4>
+                <h4 class="h4 fw-black col-7 col-sm-6">h4. Heading title</h4>
+              </div>
+              <div class="row">
+                <h5 class="h5 fw-black col-2 col-sm-3">h5</h5>
+                <h5 class="h5 fw-black col-3">20px</h5>
+                <h5 class="h5 fw-black col-7 col-sm-6">h5. Heading title</h5>
+              </div>
+              <div class="row">
+                <h6 class="h6 fw-black col-2 col-sm-3">h6</h6>
+                <h6 class="h6 fw-black col-3">16px</h6>
+                <h6 class="h6 fw-black col-7 col-sm-6">h6. Heading title</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Displays -->
+          <div class="bd-example">
+            <p class="display-1">Display 1</p>
+            <p class="display-2">Display 2</p>
+            <p class="display-3">Display 3</p>
+            <p class="display-4">Display 4</p>
+            <p class="display-5">Display 5</p>
+            <p class="display-6">Display 6</p>
+          </div>
+
+          <!-- Body text -->
+          <div class="bd-example">
+            <h3>Body Text</h3>
+            <p>
+              In ultricies fermentum aliquet. Pellentesque dui magna,
+              condimentum non ullamcorper at, cursus in sem. Nunc condimentum,
+              purus ac sagittis ultricies, metus leo pharetra mi, non vehicula
+              felis elit et nisi. Etiam venenatis commodo libero, vel
+              ullamcorper nibh lobortis vel. Aliquam auctor porta tortor, nec
+              consequat nibh finibus a. Sed ultrices risus eget iaculis
+              luctus. Mauris vel gravida magna.
+            </p>
+          </div>
+
+          <!-- Lead text -->
+          <div class="bd-example">
+            <h3>Lead Text</h3>
+            <p class="lead">
+              This is a lead paragraph. It stands out from regular paragraphs.
+              In ultricies fermentum aliquet. Pellentesque dui magna,
+              condimentum non ullamcorper at, cursus in sem. Nunc condimentum,
+              purus ac enenatis commodo libero, am auctor porta tortor, nec
+              consequat nibh finibus a. Sed ultrices risus eget iaculis
+              luctus. Mauris vel gravida magna.
+            </p>
+            <code>
+              &lt;p class="lead">&lt;/p>
+            </code>
+          </div>
+
+          <!-- Inline text elements -->
+          <div class="bd-example">
+            <h3>Inline Text Elements</h3>
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            <p>
+              <del>This line of text is meant to be treated as deleted
+                text.</del>
+            </p>
+            <p>
+              <s>This line of text is meant to be treated as no longer
+                accurate.</s>
+            </p>
+            <p>
+              <ins>This line of text is meant to be treated as an addition to
+                the document.</ins>
+            </p>
+            <p><u>This line of text will render as underlined.</u></p>
+            <p>
+              <small>This line of text is meant to be treated as fine
+                print.</small>
+            </p>
+            <p><strong>This line rendered as bold text.</strong></p>
+            <p><em>This line rendered as italicized text.</em></p>
+          </div>
+
+          <!-- Quotes -->
+          <div class="bd-example">
+            <blockquote class="blockquote">
+              <p>A well-known quote, contained in a blockquote element.</p>
+              <footer class="blockquote-footer">
+                Someone famous in
+                <cite title="Source Title">Source Title</cite>
+              </footer>
+            </blockquote>
+            <code>
+              &lt;blockquote class="blockquote">&lt;/blockquote>
+            </code>
+          </div>
+
+          <div class="bd-example">
+            <ul class="list-unstyled">
+              <li>This is a list.</li>
+              <li>It appears completely unstyled.</li>
+              <li>Structurally, it's still a list.</li>
+              <li>
+                However, this style only applies to immediate child elements.
+              </li>
+              <li>
+                Nested lists:
+                <ul>
+                  <li>are unaffected by this style</li>
+                  <li>will still show a bullet</li>
+                  <li>and have appropriate left margin</li>
+                </ul>
+              </li>
+              <li>This may still come in handy in some situations.</li>
+            </ul>
+          </div>
+
+          <div class="bd-example">
+            <ul class="list-inline">
+              <li class="list-inline-item">This is a list item.</li>
+              <li class="list-inline-item">And another one.</li>
+              <li class="list-inline-item">But they're displayed inline.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Images -->
+      <article class="my-3" id="images">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Images</h3>
+          <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.0/content/images/">Docs</a>
+        </div>
+
+        <div>
+          <div class="bd-example">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96" />
+              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                Responsive image
+              </text>
+            </svg>
+            <code>
+              &lt;img class="img-fluid">&lt;/img>
+            </code>
+          </div>
+
+          <div class="bd-example">
+            <svg class="bd-placeholder-img img-thumbnail" width="200" height="200" xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>
+                A generic square placeholder image with a white border around
+                it, making it resemble a photograph taken with an old instant
+                camera
+              </title>
+              <rect width="100%" height="100%" fill="#868e96" />
+              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
+            </svg>
+            <code>
+              &lt;img class="img-thumbnail">&lt;/img>
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tables -->
+      <article class="my-3" id="tables">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Tables</h3>
+          <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.0/content/tables/">Docs</a>
+        </div>
+
+        <div>
+          <div class="bd-example">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bd-example">
+            <table class="table table-dark table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bd-example">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Heading</th>
+                  <th scope="col">Heading</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Default</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+
+                <tr class="table-primary">
+                  <th scope="row">Primary</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-secondary">
+                  <th scope="row">Secondary</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-success">
+                  <th scope="row">Success</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-danger">
+                  <th scope="row">Danger</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">Warning</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-info">
+                  <th scope="row">Info</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-light">
+                  <th scope="row">Light</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-dark">
+                  <th scope="row">Dark</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bd-example">
+            <table class="table table-sm table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <!-- Figures -->
+      <article class="my-3" id="figures">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Figures</h3>
+          <a class="d-flex align-items-center" href="https://getbootstrap.com/docs/5.0/content/figures/">Docs</a>
+        </div>
+
+        <div>
+          <div class="bd-example">
+            <figure class="figure">
+              <svg class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96" />
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">400x300</text>
+              </svg>
+              <figcaption class="figure-caption">
+                A caption for the above image.
+              </figcaption>
+            </figure>
+            <code>
+              &lt;figure class="figure"> <br>
+                &lt;img src="" class="figure-img img-fluid rounded" alt=""> <br>
+                &lt;figcaption class="figure-caption text-xs-right">&lt;/figcaption> <br>
+              &lt;/figure>
+            </code>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- FIN CONTENIDO -->
+
+  </div>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script src="js/cheatsheet.js"></script>
+</body>
+
+</html>

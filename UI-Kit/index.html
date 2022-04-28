@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <link rel="shortcut icon" href="./img/bootstrap-logo.svg" type="image/x-icon">
+    <title>UI Kit RCD · Bootstrap 5</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    
+    <!-- Custom styles for this template -->
+    <link href="css/cheatsheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai-sublime.min.css">
+  
+  </head>
+
+<body class="bg-light">
+  <!-- Navegación -->
+  <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+    <div class="container-fluid d-flex align-items-center">
+      <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+        <a href="index.html">
+          <img src="./img/rcd-logo.svg" width="38" height="30" class="me-3" alt="Bootstrap">
+        </a>
+        UI Kit Cheatsheet - Nombre de proyecto
+      </h1>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+  <aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2 pb-2 pb-xl-0">
+    <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Índice</h2>
+    <nav class="small" id="toc">
+      <ul class="list-unstyled">
+        <li class="my-2">
+          <a class="link d-inline-flex align-items-center" href="index.html">Introducción</a>
+        </li>
+        <li class="my-2">
+          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false"
+            data-bs-target="#contents-collapse" aria-controls="contents-collapse">Content</button>
+          <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+            <li><a class="d-inline-flex align-items-center rounded" href="content.html#typography">Typography</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="content.html#images">Images</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="content.html#tables">Tables</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="content.html#figures">Figures</a></li>
+          </ul>
+        </li>
+        <li class="my-2">
+          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false"
+            data-bs-target="#forms-collapse" aria-controls="forms-collapse">Forms</button>
+          <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
+            <li><a class="d-inline-flex align-items-center rounded" href="forms.html#overview">Overview</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="forms.html#disabled-forms">Disabled forms</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded" href="forms.html#sizing">Sizing</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="forms.html#input-group">Input group</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="forms.html#floating-labels">Floating
+                labels</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="forms.html#validation">Validation</a></li>
+          </ul>
+        </li>
+        <li class="my-2">
+          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false"
+            data-bs-target="#components-collapse" aria-controls="components-collapse">Components</button>
+          <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#accordion">Accordion</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#alerts">Alerts</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#badge">Badge</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#breadcrumb">Breadcrumb</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#buttons">Buttons</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#button-group">Button group</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#card">Card</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#carousel">Carousel</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#dropdowns">Dropdowns</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#list-group">List group</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#modal">Modal</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#navs">Navs</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#navbar">Navbar</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#pagination">Pagination</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#popovers">Popovers</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#progress">Progress</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#scrollspy">Scrollspy</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#spinners">Spinners</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#toasts">Toasts</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="components.html#tooltips">Tooltips</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <div class="bd-cheatsheet container-fluid bg-body">
+
+    <section id="introduction">
+      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Introducción</h2>
+
+      <!-- Fonts -->
+      <article class="my-3" id="fonts">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Fonts</h3>
+        </div>
+
+        <div>
+          <div class="bd-example">
+            <h2>Montserrat</h2>
+            <pre>
+              <code><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></code>
+</pre>
+            <pre>
+              <code>font-family: 'Montserrat', sans-serif;</code>
+            </pre>
+          </div>
+      </article>
+
+      <!-- Paleta de colores -->
+      <article class="my-3" id="colors">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Colores</h3>
+        </div>
+        <div>
+          <!-- Colores por defecto -->
+          <div class="bd-example">
+            <h2>Colores Base Bootstrap</h2>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: var(--bs-blue);"></div>
+                <div class="color-name">Blue</div>
+                <div class="color-hex mb-4">#0d6efd</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: var(--bs-indigo);"></div>
+                <div class="color-name">Indigo</div>
+                <div class="color-hex mb-4">#6610f2</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: var(--bs-purple);"></div>
+                <div class="color-name">Purple</div>
+                <div class="color-hex mb-4">#6f42c1</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: var(--bs-pink);"></div>
+                <div class="color-name">Pink</div>
+                <div class="color-hex mb-4">#d63384</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: var(--bs-red);"></div>
+                <div class="color-name">Red</div>
+                <div class="color-hex mb-4">#dc3545</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: var(--bs-orange);"></div>
+                <div class="color-name">Orange</div>
+                <div class="color-hex mb-4">#fd7e14</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-dark" style="background-color: var(--bs-yellow);"></div>
+                <div class="color-name">Yellow</div>
+                <div class="color-hex mb-4">#ffc107</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: var(--bs-green);"></div>
+                <div class="color-name">Green</div>
+                <div class="color-hex mb-4">#198754</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-dark" style="background-color: var(--bs-teal);"></div>
+                <div class="color-name">Teal</div>
+                <div class="color-hex mb-4">#20c997</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-dark" style="background-color: var(--bs-cyan);"></div>
+                <div class="color-name">Cyan</div>
+                <div class="color-hex mb-4">#0dcaf0</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-dark" style="background-color: var(--bs-dark);"></div>
+                <div class="color-name">Gray</div>
+                <div class="color-hex mb-4">#6c757d</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-dark" style="background-color: var(--bs-gray-dark);"></div>
+                <div class="color-name">Gray Dark</div>
+                <div class="color-hex mb-4">#343a40</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colores primarios -->
+          <div class="bd-example">
+            <h2>Colores Primarios</h2>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-primary text-white"></div>
+                <div class="color-name">Primary</div>
+                <div class="color-hex mb-4">#0d6efd</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colores secundarios -->
+          <div class="bd-example">
+            <h2>Colores Secundarios</h2>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-secondary text-white"></div>
+                <div class="color-name">Secondary</div>
+                <div class="color-hex mb-4">#6c757d</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colores temáticos -->
+          <div class="bd-example">
+            <h2>Colores temáticos</h2>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-success text-white"></div>
+                <div class="color-name">Success</div>
+                <div class="color-hex mb-4">#198754</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-danger text-white"></div>
+                <div class="color-name">Danger</div>
+                <div class="color-hex mb-4">#dc3545</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-warning text-dark"></div>
+                <div class="color-name">Warning</div>
+                <div class="color-hex mb-4">#ffc107</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-info text-dark"></div>
+                <div class="color-name">Info</div>
+                <div class="color-hex mb-4">#0dcaf0</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-light text-dark"></div>
+                <div class="color-name">Light</div>
+                <div class="color-hex mb-4">#f8f9fa</div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-dark text-white"></div>
+                <div class="color-name">Dark</div>
+                <div class="color-hex mb-4">#212529</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Otros colores temáticos -->
+          <div class="bd-example">
+            <h2>Colores temáticos personalizados (ejemplo)</h2>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-test text-white"></div>
+                <div class="color-name">Test color</div>
+                <div class="color-hex mb-4">#e73e28</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-gradient text-white"></div>
+                <div class="color-name">Gradient</div>
+                <div class="color-hex mb-4">Primary + Secondary</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Escala de grises -->
+          <div class="bd-example">
+            <h2>Escala de grises</h2>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-dark" style="background-color: #f8f9fa;"></div>
+                <div class="color-name">Gray-100</div>
+                <div class="color-hex mb-4">#f8f9fa</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-dark" style="background-color: #e9ecef;"></div>
+                <div class="color-name">Gray-200</div>
+                <div class="color-hex mb-4">#e9ecef</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-dark" style="background-color: #dee2e6;"></div>
+                <div class="color-name">Gray-300</div>
+                <div class="color-hex mb-4">#dee2e6</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: #ced4da;"></div>
+                <div class="color-name">Gray-400</div>
+                <div class="color-hex mb-4">#ced4da</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: #adb5bd;"></div>
+                <div class="color-name">Gray-500</div>
+                <div class="color-hex mb-4">#adb5bd</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: #6c757d;"></div>
+                <div class="color-name">Gray-600</div>
+                <div class="color-hex mb-4">#6c757d</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: #495057;"></div>
+                <div class="color-name">Gray-700</div>
+                <div class="color-hex mb-4">#495057</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: #343a40;"></div>
+                <div class="color-name">Gray-800</div>
+                <div class="color-hex mb-4">#343a40</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color text-white" style="background-color: #212529;"></div>
+                <div class="color-name">Gray-900</div>
+                <div class="color-hex mb-4">#212529</div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-black text-light"></div>
+                <div class="color-name">Black</div>
+                <div class="color-hex mb-4">#000</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color bg-white text-dark border"></div>
+                <div class="color-name">White</div>
+                <div class="color-hex mb-4">#fff</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colores tipográficos -->
+          <div class="bd-example">
+            <h2>Colores tipográficos</h2>
+            <div class="row mt-4">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color" style="background-color: #212529;"></div>
+                <div class="color-name">Heading color</div>
+                <div class="color-hex mb-4">#212529</div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                <div class="p-3 mb-3 bg-color" style="background-color: #343a40;"></div>
+                <div class="color-name">Body color</div>
+                <div class="color-hex mb-4">#343a40</div>
+              </div>
+            </div>
+          </div>
+      </article>
+
+      <!-- Íconos -->
+      <article class="my-3" id="icons">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Íconos</h3>
+        </div>
+        <div>
+          <div class="bd-example">
+            
+          </div>
+      </article>
+
+      <!-- Logos -->
+      <article class="my-3" id="icons">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Logos</h3>
+        </div>
+        <div>
+          <div class="row">
+            
+          </div>
+      </article>
+
+      <!-- Figma -->
+      <article class="my-3" id="icons">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-lg-0 mb-lg-2">
+          <h3>Figma</h3>
+        </div>
+        <div>
+          <a class="fs-3" target="_blank" href="https://www.figma.com/file/...">UI Kit Figma</a>            
+          </div>
+      </article>
+
+    </section><!-- FIN CONTENIDO -->
+
+
+  </div>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script src="js/cheatsheet.js"></script>
+
+</body>
+
+</html>

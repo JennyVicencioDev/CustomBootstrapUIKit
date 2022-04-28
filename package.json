@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-rcd-ui-kit",
+  "version": "1.0.0",
+  "description": "Proyecto base con UI Kit",
+  "main": "index.js",
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "css"
+  ],
+  "scripts": {
+    "sass-bs": "sass --watch sass/custom-bootstrap.scss:css/bootstrap.css",
+    "sass-style": "sass --watch sass/style.scss:style.css"
+  },
+  "author": "Jennyfer Vicencio (RCD)",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}
