@@ -29,3 +29,6 @@ npm run sass-style
 sass --watch sass/style.scss:style.css
 ```
 
+## 3. UI Kit
+
+- Ver htmls de la carpeta /UI-Kit para ver cambios realizados en componentes.

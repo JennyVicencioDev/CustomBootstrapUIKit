@@ -21,7 +21,7 @@
 // Definir paleta de nuevos colores:
 $testcolor: #dc0000;
 
-// Agregar, borrar o modificar para actualizar mapa de colores:
+// Agregar, borrar o modificar para actualizar mapa de colores existente:
 $colors: (
   "blue":       $blue,
   "indigo":     $indigo,
@@ -42,7 +42,7 @@ $colors: (
 //
 // Colores Temáticos Bootstrap
 //
-// Modificar para actualizar mapa de colores temáticos predefinidos:
+// Modificar para actualizar mapa de colores temáticos predefinidos por Bootstrap:
 
 // $primary:       $blue;
 // $secondary:     $gray-600;
@@ -68,7 +68,7 @@ $theme-colors: (
 //
 // Colores Temáticos personalizados
 //
-// Mapa de nuevos colores que generarán clases de estado para links, botones, backgrounds, text, etc.):
+// Se puede crear un nuevo mapa colores que generarán clases de estado para links, botones, backgrounds, text, etc.), con un nombre diferente:
 
 $custom-theme-colors: (
   "test": $testcolor, // color temático de prueba
@@ -76,9 +76,11 @@ $custom-theme-colors: (
 
 //
 // Gradient
+// Es posible modificar el gradient por defecto de boostrap
 //
 $gradient: linear-gradient(90deg, rgba($white, .5), rgba($blue, .5));
 
+// Desde aqui es posible modificar cualquier variable predefinida en el partial /bootstrap/_variables.scss de los archivos originales de Bootstrap
 
 //////////////// CUERPO ///////////////
 
@@ -124,7 +126,7 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 // $h5-font-size: $font-size-base * 1.25;
 // $h6-font-size: $font-size-base;
 
-// Modificar en caso de tener estilos diferentes en los headings:
+// Modificar en caso de desear estilos diferentes en los headings:
 // $headings-margin-bottom:      $spacer * .5;
 // $headings-font-family:        null;
 // $headings-font-style:         null;
@@ -133,12 +135,13 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 // $headings-color:              $gray-900;
 
 
-// ** Para añadir más variables para modificar ver 'bootstrap/variables' :) **
+// ***** Añadir más variables para modificar. Ver 'bootstrap/_variables.scss' :D *****
 
 // --------------- fin custom bs --------------- //
 
+// (opcional)
 // custom-theme-colors mapping
-// fix de clases .bg-*, .text-* que arreglarán en una futura versión de BS
+// ya que por algún motivo no se generan clases .bg-*, .text-* con tu nuevos colores temáticos, esto lo arregla. Pero esto se arreglará (dijeron) en una futura versión de BS y esto no será necesario (este es el 5.1.3)
 // No comentar
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
